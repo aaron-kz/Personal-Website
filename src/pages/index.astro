@@ -1,35 +1,161 @@
 ---
+// import AutoTypeCSS from "@components/AutoTypeCSS.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HorizontalCard from "../components/HorizontalCard.astro";
-import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+// import HorizontalCard from "../components/HorizontalCard.astro";
+// import { getCollection } from "astro:content";
+// import createSlug from "../lib/createSlug"
 
-const last_posts = posts.slice(0, 3);
+// const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
-    <div class="py-2">
-      <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
-      </text>
-    </div>
-    <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
-      </a>
-    </div>
-  </div>
+    <div class="pb-12 mt-5">
+        <h1 class="text-3xl md:text-4xl font-bold py-1">Hola, soy Aaron KZ</h1>
+        <div class="py-2">
+            <text class="text-lg">
+                <span class="font-semibold">Software Developer</span> actualmente
+                enfocado en el <span class="font-semibold">Desarrollo Web</span
+                >.
+            </text>
+            <br /><br />
+            <text class="text-lg">
+                Creo landing pages, catálogos, blogs y en general: <span
+                    class="font-semibold">soluciones web eficientes</span
+                > y adaptadas a tus necesidades.
+            </text>
+        </div>
 
-  <div>
+        <!-- Typer.js -->
+        <p>
+            <span
+                class="typer text-lg font-bold mt-1"
+                id="main"
+                data-words="Construyo tu web desde cero,Redacto artículos para tu blog,Creo soluciones para tu negocio"
+                data-delay="50"
+                data-deleteDelay="1000"
+                data-colors="#fda618"></span>
+
+            <span class="cursor" data-owner="main"></span>
+        </p>
+
+        <script is:inline src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"
+        ></script>
+
+        <h2 class="text-xl font-semibold mt-7">Tech Stack Principal:</h2>
+        <div class="flex flex-wrap gap-2 mt-5 p-1">
+            <a
+                href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+                target="_blank"
+                rel="noreferrer"
+            >
+                <img
+                    src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black"
+                    alt="JavaScript"
+                />
+            </a>
+
+            <a
+                href="https://www.typescriptlang.org/"
+                target="_blank"
+                rel="noreferrer"
+            >
+                <img
+                    src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat"
+                    alt="Typescript"
+                /></a
+            >
+
+            <a href="https://astro.build" target="_blank" rel="noreferrer">
+                <img
+                    src="https://img.shields.io/badge/Astro-FF5D01?logo=astro&logoColor=fff&style=flat"
+                    alt="astro"
+                /></a
+            >
+
+            <a href="https://react.dev/" target="_blank" rel="noreferrer">
+                <img
+                    src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat"
+                    alt="react"
+                />
+            </a>
+
+            <a href="https://tailwindcss.com" target="_blank" rel="noreferrer">
+                <img
+                    src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat"
+                    alt="tailwindcss"
+                /></a
+            >
+
+            <a href="https://supabase.com" target="_blank" rel="noreferrer">
+                <img
+                    src="https://img.shields.io/badge/Supabase-green?logo=supabase"
+                    alt="Supabase"
+                />
+            </a>
+
+            <a href="https://wordpress.org" target="_blank" rel="noreferrer">
+                <img
+                    src="https://img.shields.io/badge/WordPress-blue?logo=wordpress&logoColor=white"
+                    alt="WordPress Badge"
+                />
+            </a>
+        </div>
+        <h2 class="text-xl font-semibold mt-7">Otras herramientas:</h2>
+
+        <div class="flex gap-2 mt-5 p-1 flex-wrap">
+            <a href="https://www.figma.com" target="_blank" rel="noreferrer">
+                <img
+                    src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white"
+                    alt="Figma"
+                />
+            </a>
+
+            <a href="https://github.com" target="_blank" rel="noreferrer">
+                <img
+                    src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white"
+                    alt="GitHub"
+                />
+            </a>
+
+            <a href="https://pnpm.io" target="_blank" rel="noreferrer">
+                <img
+                    src="https://img.shields.io/badge/pnpm-ffffff?logo=pnpm&logoColor=f69220"
+                    alt="pnpm"
+                />
+            </a>
+
+            <!-- <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
+                <img
+                    src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white"
+                    alt="Vite"
+                />
+            </a> -->
+
+            <a href="https://obsidian.md" target="_blank" rel="noreferrer">
+                <img
+                    src="https://img.shields.io/badge/Obsidian-483699?logo=obsidian&logoColor=white"
+                    alt="Obsidian"
+                />
+            </a>
+        </div>
+
+        <div class="mt-10 flex gap-3">
+            <a
+                href="mailto:aaronkz.pv@gmail.com"
+                target="_blank"
+                class="btn bg-cyan-900 text-cyan-300 hover:bg-gray-900"
+            >
+                Contáctame
+            </a>
+
+            <a href="/projects" class="btn btn-outline"> Portfolio </a>
+        </div>
+    </div>
+
+    <!-- <div>
     <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
   </div>
 
@@ -54,9 +180,9 @@ const last_posts = posts.slice(0, 3);
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     url="#"
     badge="FOSS"
-  />
+  /> -->
 
-  <div>
+    <!--  <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
   </div>
 
@@ -74,5 +200,5 @@ const last_posts = posts.slice(0, 3);
         <div class="divider my-0" />
       </>
     ))
-  }
+  } -->
 </BaseLayout>

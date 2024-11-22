@@ -1,0 +1,79 @@
+<div class="wrapper mt-3">
+    <div class="static-txt font-semibold">Puedo:</div>
+    <ul class="dynamic-txt font-semibold">
+        <li>crear tu sitio web desde cero</li>
+        <li>mejorar el SEO de tu sitio web</li>
+        <li>redactar artículos para tu blog</li>
+    </ul>
+</div>
+
+<style>
+    .wrapper {
+        display: flex;
+    }
+
+    .wrapper .static-txt {
+        font-size: 1.125rem;
+    }
+
+    .wrapper .dynamic-txt {
+        margin-left: 0.313rem;
+        line-height: 1.563rem;
+        height: 1.563rem;
+        overflow: hidden;
+    }
+
+    .dynamic-txt li {
+        list-style: none;
+        color: #84cc16;
+        font-size: 1.125rem;
+        top: 0;
+        position: relative;
+        animation: slide 9s steps(3) infinite; /* el 3 es por la cantidad de opciones a cambiar que hay y los segundos porque son 3 segundos por cada opción (3 x 3 = 9)  */
+    }
+
+    @keyframes slide {
+        100% {
+            top: -4.688rem;
+        }
+    }
+
+    .dynamic-txt li::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-left: 2px solid #84cc16;
+        left: 0;
+        animation: typing 3s steps(25) infinite;
+        background-color: #0f172a;
+    }
+
+    [data-theme="night"] .dynamic-txt li::after {
+        background-color: #0f172a;
+    }
+
+    [data-theme="garden"] .dynamic-txt li::after {
+        background-color: #e9e7e7;
+    }
+
+    [data-theme="aqua"] .dynamic-txt li::after {
+        background-color: #345da7;
+    }
+
+    @keyframes typing {
+        40%,
+        60% {
+            left: calc(100% + 5px);
+        }
+        100% {
+            left: 0;
+        }
+    }
+
+    @media (width < 370px) {
+        .wrapper {
+            display: none;
+        }
+    }
+</style>
