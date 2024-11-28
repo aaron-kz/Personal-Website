@@ -31,12 +31,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <!-- Typer.js -->
         <p>
             <span
-                class="typer text-lg font-bold mt-1"
+                class="typer text-lg text-warning mt-1 bg-inherit"
                 id="main"
                 data-words="Construyo tu web desde cero,Redacto artículos para tu blog,Creo soluciones para tu negocio"
                 data-delay="50"
                 data-deleteDelay="1000"
-                data-colors="#fda618"></span>
+                data-colors="current"></span>
 
             <span class="cursor" data-owner="main"></span>
         </p>
@@ -45,6 +45,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         ></script>
 
         <h2 class="text-xl font-semibold mt-7">Tech Stack Principal:</h2>
+
         <div class="flex flex-wrap gap-2 mt-5 p-1">
             <a
                 href="https://developer.mozilla.org/es/docs/Web/JavaScript"
@@ -146,12 +147,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <a
                 href="mailto:aaronkz.pv@gmail.com"
                 target="_blank"
-                class="btn bg-cyan-900 text-cyan-300 hover:bg-gray-900"
+                class="btn active:text-[#a6adbb] active:bg-[#111419]"
             >
                 Contáctame
             </a>
 
-            <a href="/projects" class="btn btn-outline"> Portfolio </a>
+            <a
+                href="/projects"
+                class="btn active:bg-[#a6adbb] active:text-[#1d232a] btn-outline"
+            >
+                Portfolio
+            </a>
         </div>
     </div>
 
