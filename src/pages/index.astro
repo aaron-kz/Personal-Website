@@ -142,13 +142,29 @@ import BaseLayout from "@layouts/BaseLayout.astro";
         </div>
 
         <div class="mt-10 flex gap-3">
-            <a
-                href="mailto:aaronkz.pv@gmail.com"
-                target="_blank"
-                class="btn active:text-[#a6adbb] active:bg-[#111419]"
-            >
-                Contáctame
-            </a>
+            <div class="dropdown dropdown-top">
+                <button
+                    tabindex="0"
+                    role="button"
+                    class="btn active:text-[#a6adbb] active:bg-[#111419]"
+                    >Contáctame</button
+                >
+                <ul
+                    tabindex="0"
+                    class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow-sm shadow-info"
+                >
+                    <li>
+                        <a href="mailto:aaronkz.pv@gmail.com" target="_blank">
+                            Email
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/hakaiz" target="_blank"
+                            >Telegram</a
+                        >
+                    </li>
+                </ul>
+            </div>
 
             <a
                 href="/projects"
