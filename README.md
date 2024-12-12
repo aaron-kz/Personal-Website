@@ -1,8 +1,8 @@
-# Astrofy | Personal Portfolio Website Template
+# Aaron KZ | Personal Website
 
-![Astrofy | Personal Porfolio Website Template](public/social_img.webp)
+![Aaron KZ | Personal Website](public/social_img.webp)
 
-Personal Portfolio Website built with Astro and TailwindCSS
+Personal Portfolio built with Astro and TailwindCSS
 
 ## Demo
 
