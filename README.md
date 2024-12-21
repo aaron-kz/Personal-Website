@@ -6,7 +6,7 @@ Personal Portfolio built with Astro and TailwindCSS
 
 ## Demo
 
-View a live demo of [Aaronkz](https://aaronkz.pages.dev/)
+View a live demo of [Aaronkz](https://imaaronkz.pages.dev/)
 
 ## Installation
 
