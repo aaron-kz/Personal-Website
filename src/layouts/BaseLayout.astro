@@ -7,12 +7,18 @@ import { ViewTransitions } from "astro:transitions";
 
 import { fade } from "astro:transitions";
 
-import { SITE_TITLE, SITE_DESCRIPTION, TRANSITION_API } from "../config";
+import {
+    SITE_TITLE,
+    SITE_DESCRIPTION,
+    SITE_KEYWORDS,
+    TRANSITION_API,
+} from "../config";
 
 const {
     image,
     title = SITE_TITLE,
     description = SITE_DESCRIPTION,
+    keywords = SITE_KEYWORDS,
     includeSidebar = true,
     sideBarActiveItemID,
     ogType,
@@ -20,15 +26,13 @@ const {
 ---
 
 <!doctype html>
-<html
-    lang="es"
-    data-theme="dark"
->
+<html lang="es" data-theme="dark">
     <head>
         <BaseHead
             title={title}
             description={description}
             image={image}
+            keywords={keywords}
             ,
             ogType={ogType}
         />
